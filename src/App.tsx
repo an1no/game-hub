@@ -14,14 +14,14 @@ function App() {
         }}>
             <GridItem area='nav'>
                 <NavBar/>
-
             </GridItem>
             <Show above="lg">
                 <GridItem area='aside'>
-                    <GameGrid />
+                    <GameGrid/>
                 </GridItem>
             </Show>
-            <GridItem area='main'>Main</GridItem>
+            <GridItem area='main'>
+            </GridItem>
         </Grid>
     )
 }

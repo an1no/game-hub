@@ -2,6 +2,7 @@ import {useState} from 'react'
 import './App.css'
 import {Grid, GridItem, Show, useColorMode} from "@chakra-ui/react";
 import NavBar from "./components/NavBar.tsx";
+import GameGrid from './components/GameGrid.tsx'
 
 function App() {
     const [count, setCount] = useState(0);
@@ -16,7 +17,9 @@ function App() {
 
             </GridItem>
             <Show above="lg">
-                <GridItem area='aside'>Aside</GridItem>
+                <GridItem area='aside'>
+                    <GameGrid />
+                </GridItem>
             </Show>
             <GridItem area='main'>Main</GridItem>
         </Grid>

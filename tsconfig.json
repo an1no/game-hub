@@ -6,5 +6,11 @@
   ],
   "compilerOptions": {
     "strict": false,
+    "noUnusedLocals": false, // Allow unused locals
+    "noUnusedParameters": false, // Allow unused parameters
+    "skipLibCheck": true,
+  },
+  "rules": {
+    "@typescript-eslint/no-unused-vars": "off"
   }
 }

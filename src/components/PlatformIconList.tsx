@@ -11,7 +11,7 @@ interface Props {
 }
 
 const PlatformIconList = ({platforms}: Props) => {
-    const iconMap: { [key: string] } = {
+    const iconMap: any = {
         pc: FaWindows,
         playstation: FaPlaystation,
         xbox: FaXbox,

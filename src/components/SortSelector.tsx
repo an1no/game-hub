@@ -1,5 +1,4 @@
 import {Menu, MenuButton, MenuItem, MenuList} from "@chakra-ui/react";
-import {BsChevronDown} from "react-icons/bs";
 
 interface Props {
     onSelectSortOrder: (order: string) => void;
@@ -18,7 +17,6 @@ const SortSelector = ({onSelectSortOrder, selectedSortOrder}: Props) => {
         return (
             <Menu>
                 <MenuButton
-                    icon={<BsChevronDown/>}
                     px={4}
                     py={2}
                     transition='all 0.2s'

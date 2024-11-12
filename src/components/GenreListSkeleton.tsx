@@ -1,5 +1,4 @@
-import React from 'react';
-import {List, ListItem, Skeleton, SkeletonText, Text} from "@chakra-ui/react";
+import {List, ListItem, Skeleton, SkeletonText} from "@chakra-ui/react";
 
 const GenreListSkeleton = () => {
     const skeletonArray = Array(10).fill(null);

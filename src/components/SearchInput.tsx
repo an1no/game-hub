@@ -7,12 +7,13 @@ interface Props {
 }
 
 function SearchInput({onSearch}: Props) {
-    const ref = useRef<HTMLInputElement>();
+    const ref = useRef<HTMLInputElement | null>(null);
 
     return (
         <form style={{width: '100%'}} onSubmit={(e) => {
             e.preventDefault();
-            onSearch(ref.current.value);
+            if (ref.current)
+                onSearch(ref.current.value);
         }}>
             <InputGroup>
                 <InputLeftElement children={<BsSearch/>}/>

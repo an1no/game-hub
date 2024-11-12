@@ -1,6 +1,4 @@
-import {useState} from "react";
 import {Menu, MenuButton, MenuItem, MenuList} from "@chakra-ui/react";
-import {BsChevronDown} from "react-icons/bs";
 import usePlatforms from "../hooks/usePlatforms.ts";
 import {Platform} from "../hooks/useGames.ts";
 
@@ -16,7 +14,6 @@ const PlatformSelector = ({onSelectPlatform, selectedPlatform}: Props) => {
     return (
         <Menu>
             <MenuButton
-                icon={<BsChevronDown/>}
                 px={4}
                 py={2}
                 transition='all 0.2s'
@@ -25,7 +22,7 @@ const PlatformSelector = ({onSelectPlatform, selectedPlatform}: Props) => {
                 _hover={{bg: 'gray.400'}}
                 _expanded={{bg: 'blue.400'}}
                 _focus={{boxShadow: 'outline'}}>
-                {selectedPlatform? selectedPlatform?.name : 'Select Platform'}
+                {selectedPlatform ? selectedPlatform?.name : 'Select Platform'}
             </MenuButton>
 
             <MenuList>

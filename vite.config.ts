@@ -7,7 +7,9 @@ import checker from 'vite-plugin-checker';
 
 // https://vite.dev/config/
 export default defineConfig({
-    plugins: [react(), checker({typescript: true}), commonjs(), nodePolyfills(),], resolve: {
+    plugins: [react(), checker({typescript: true}), commonjs(), nodePolyfills(),], build: {
+        outDir: 'dist'
+    }, resolve: {
         dedupe: ['react', 'react-dom'],
     },
 })
